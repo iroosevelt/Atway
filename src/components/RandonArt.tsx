@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Image, Stack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const RandomArt: React.FC = () => {
   const [imageUrl, setImageUrl] = useState<string>("");
@@ -48,17 +49,21 @@ const RandomArt: React.FC = () => {
       >
         <Container maxW="100%" h="100vh" p="0" centerContent>
           <Stack h="80vh" m="auto">
-            <Image
-              src={imageUrl}
-              alt="Art"
-              w="100%"
-              px={{ base: "2rem", md: "0" }}
-              h="100%"
-              objectFit="contain"
-              //   boxShadow="240px 240px 240px rgba(0, 0, 0, 0.5)"
-              rounded="8px"
-              filter="drop-shadow(240px 240px 240px rgba(0, 0, 0, 0.5))"
-            />
+            <motion.div whileTap={{ scale: 0.9 }}>
+              <Stack h="80vh" m="auto">
+                <Image
+                  src={imageUrl}
+                  alt="Art"
+                  w="100%"
+                  px={{ base: "2rem", md: "0" }}
+                  h="100%"
+                  objectFit="contain"
+                  //   boxShadow="240px 240px 240px rgba(0, 0, 0, 0.5)"
+                  rounded="8px"
+                  filter="drop-shadow(240px 240px 240px rgba(0, 0, 0, 0.5))"
+                />
+              </Stack>
+            </motion.div>
           </Stack>
         </Container>
       </Stack>
