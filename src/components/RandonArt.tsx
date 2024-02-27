@@ -30,9 +30,9 @@ const RandomArt: React.FC = () => {
           w="100%"
           h="100%"
           objectFit="contain"
-          //   boxShadow="240px 240px 240px rgba(0, 0, 0, 0.5)"
+          boxShadow="240px 240px 240px rgba(0, 0, 0, 0.5)"
           rounded="8px"
-          filter="drop-shadow(240px 240px 240px rgba(0, 0, 0, 0.5))"
+          //   filter="drop-shadow(240px 240px 240px rgba(0, 0, 0, 0.5))"
         />
       </Stack>
     </Container>

@@ -28,7 +28,7 @@ function App({ Component, pageProps, router }: any) {
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             <Layout
-              customColors={["#222222", "#222222", "#d2dae2", "#dfe4ea"]}
+              customColors={["#ced6e0", "#ced6e0", "#ced6e0", "#ced6e0"]}
               {...layoutProps}
             >
               <Component {...pageProps} />

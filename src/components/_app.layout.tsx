@@ -32,7 +32,7 @@ const Layout = ({ children, customColors = [], ...props }: AppLayoutProps) => {
           }
 
           body {
-            background-color: #222222;
+            background-color: #ced6e0;
           }
 
           ::-webkit-scrollbar {
