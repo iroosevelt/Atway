@@ -1,8 +1,8 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "next/head";
-import "fonts.css";
-import theme from "theme";
+
 import { AnimatePresence, motion } from "framer-motion";
+import Head from "next/head";
+import theme from "theme";
 
 const LayoutDefault = ({ children }: any) => <>{children}</>;
 

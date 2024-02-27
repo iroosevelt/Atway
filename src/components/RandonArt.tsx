@@ -27,6 +27,7 @@ const RandomArt: React.FC = () => {
       <Stack h="80vh" m="auto">
         <Image
           src={imageUrl}
+          alt="Art"
           w="100%"
           h="100%"
           objectFit="contain"

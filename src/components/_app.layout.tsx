@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import { Global, css } from "@emotion/react";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 type AppLayoutProps = {
   children: React.ReactElement;
