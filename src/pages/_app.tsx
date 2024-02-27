@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/react";
-
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import theme from "theme";
@@ -28,7 +27,7 @@ function App({ Component, pageProps, router }: any) {
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             <Layout
-              customColors={["#ced6e0", "#ced6e0", "#ced6e0", "#ced6e0"]}
+              customColors={["#222222", "#222222", "#222222", "#222222"]}
               {...layoutProps}
             >
               <Component {...pageProps} />
