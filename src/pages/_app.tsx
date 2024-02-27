@@ -15,7 +15,7 @@ function App({ Component, pageProps, router }: any) {
       <ChakraProvider theme={theme}>
         <Head>
           <title>All These Worlds Are Yours | Atway</title>
-          <meta name="description" content="Design crossing cultures" />
+          <meta name="description" content="AR Art Exhibition" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -27,7 +27,10 @@ function App({ Component, pageProps, router }: any) {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
-            <Layout customColors={["#000", "#fff", "#333"]} {...layoutProps}>
+            <Layout
+              customColors={["#222222", "#222222", "#d2dae2", "#dfe4ea"]}
+              {...layoutProps}
+            >
               <Component {...pageProps} />
             </Layout>
           </motion.div>

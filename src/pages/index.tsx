@@ -9,6 +9,7 @@ import {
   Text,
   chakra,
 } from "@chakra-ui/react";
+import RandomArt from "components/RandonArt";
 import Layout from "components/_app.layout";
 import { IoMdArrowForward } from "react-icons/io";
 // import Link from "next/link";
@@ -16,7 +17,7 @@ import { IoMdArrowForward } from "react-icons/io";
 const Page = () => {
   return (
     <>
-      <Heading>ATWAY</Heading>
+      <RandomArt />
     </>
   );
 };

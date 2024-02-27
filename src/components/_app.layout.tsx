@@ -31,6 +31,10 @@ const Layout = ({ children, customColors = [], ...props }: AppLayoutProps) => {
             scroll-behavior: smooth;
           }
 
+          body {
+            background-color: #222222;
+          }
+
           ::-webkit-scrollbar {
             width: 0px;
             border-radius: 20px;
@@ -48,7 +52,8 @@ const Layout = ({ children, customColors = [], ...props }: AppLayoutProps) => {
         minH="100vh"
         p="0"
         m="0"
-        backgroundColor={backgroundColor}
+        background={backgroundColor}
+        color="rgba(255, 255, 255, 80%)"
       >
         {children}
       </Container>
