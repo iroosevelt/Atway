@@ -1,17 +1,9 @@
 import { useEffect, useState } from "react";
-import {
-  Button,
-  Container,
-  Image,
-  Stack,
-  Text,
-  chakra,
-} from "@chakra-ui/react";
+import { Avatar, Button, Container, Image, Stack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
-import Link from "next/link";
 
-const RandomArt: React.FC = () => {
+const UserProfile: React.FC = () => {
   const [imageUrl, setImageUrl] = useState<string>("");
 
   useEffect(() => {
@@ -69,31 +61,34 @@ const RandomArt: React.FC = () => {
             direction={{ base: "column", md: "row" }}
           >
             <motion.div
-              whileTap={{ scale: 0.9 }}
-              drag
-              dragConstraints={{
-                top: -50,
-                left: -50,
-                right: 50,
-                bottom: 50,
-              }}
+            //   whileTap={{ scale: 0.9 }}
+            //   drag
+            //   dragConstraints={{
+            //     top: -50,
+            //     left: -50,
+            //     right: 50,
+            //     bottom: 50,
+            //   }}
             >
               <Stack h={{ base: "100%", md: "80vh" }} m="auto">
-                <Image
-                  src={imageUrl}
-                  alt="Art"
-                  w="100%"
-                  px={{ base: "1.5rem", md: "0" }}
+                <Stack
+                  //   src={imageUrl}
+                  //   alt="Art"
+                  bgColor="rgba(255, 255, 255, 8%)"
+                  w={{ base: "100%", md: "400px" }}
+                  px={{ base: "2rem", md: "0" }}
                   h="100%"
                   objectFit="contain"
                   //   boxShadow="240px 240px 240px rgba(0, 0, 0, 0.5)"
                   rounded="8px"
                   filter="drop-shadow(240px 240px 240px rgba(0, 0, 0, 0.5))"
-                />
+                >
+                  <Avatar name="user" src="/profile.svg" />
+                </Stack>
                 <Stack></Stack>
               </Stack>
             </motion.div>
-            {/* <Stack
+            <Stack
               pos={{ base: "relative", md: "relative" }}
               right="0"
               my="auto"
@@ -101,39 +96,7 @@ const RandomArt: React.FC = () => {
               // top={{ base: "0", md: "1rem" }}
             >
               <Menu />
-            
-            </Stack> */}
-          </Stack>
-          <Stack
-            direction="row"
-            // bg="#ccc"
-            fontSize="xs"
-            fontWeight="300"
-            justify="center"
-            align="center"
-            w="100%"
-            pb={{ base: "1rem", md: "2rem" }}
-            // pr={{ base: "0", md: "2.5rem" }}
-            letterSpacing="0.5px"
-            spacing="1rem"
-            opacity="50%"
-            // transition="all 4s ease-in-out" // Transition applied here
-          >
-            <Link href="/">
-              <chakra.span
-                bg="rgba(255,255, 255, 20%)"
-                px="0.6rem"
-                py="0.3rem"
-                rounded="12px"
-                _hover={{ bg: "rgba(255,255, 255, 16%)" }}
-              >
-                Become a member
-              </chakra.span>
-            </Link>
-            {/* <Link href="/">
-              <Text _hover={{ textDecoration: "underline" }}>Exhibitions</Text>
-            </Link> */}
-            {/* <Link href="/">Become a member</Link> */}
+            </Stack>
           </Stack>
         </Container>
       </Stack>
@@ -141,4 +104,4 @@ const RandomArt: React.FC = () => {
   );
 };
 
-export default RandomArt;
+export default UserProfile;
