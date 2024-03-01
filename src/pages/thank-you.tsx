@@ -36,7 +36,7 @@ const Page = () => {
             fontWeight="300"
             fontSize={{ base: "xs", md: "sm" }}
           >
-            You will be the first to know when we launch
+            We will reach out when we launch
           </Text>
         </Stack>
       </Container>
