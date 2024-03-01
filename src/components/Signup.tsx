@@ -61,7 +61,7 @@ const SignupForm: React.FC = () => {
             fontSize={{ base: "1.3rem", md: "1.5rem" }}
             textAlign="center"
             variant="flushed"
-            color="rgba(255, 255, 255, 24%)"
+            color="rgba(255, 255, 255, 30%)"
             borderColor="rgba(255, 255, 255, 20%)"
             _placeholder={{
               color: "rgba(255, 255, 255, 24%)",
