@@ -8,10 +8,27 @@ const RandomArt: React.FC = () => {
   useEffect(() => {
     // Array of Cloudinary image links
     const cloudinaryImageLinks = [
-      "https://res.cloudinary.com/dzj0s8xyz/image/upload/v1709060863/Art/Poster1-1_l4udw1.png",
-      "https://res.cloudinary.com/dzj0s8xyz/image/upload/v1709060863/Art/Poster1_vcb5zu.png",
-      "https://res.cloudinary.com/dzj0s8xyz/image/upload/v1709060863/Art/Poster2_n20fiv.png",
-      "https://res.cloudinary.com/dzj0s8xyz/image/upload/v1709060863/Art/Poster2-1_ekokwm.png",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363640/rsfrrsdwu4xzd8qs47tf.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363639/cvt47yjusyzcoulzgxrx.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363639/vs0mgkkj76smdgvnihpt.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363637/ntgc7ctnh4tyqlortyiq.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363637/b5bi4hiwb7hx8fqf6kkh.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363636/ovotpsid4uvb2yavckgs.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363635/rixentfau4kp6a2j1dpf.jpg",
+      
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363633/yxgg8ox2pja68owghny9.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363633/e94nhsclgmwds8bwaaqn.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363633/jwncn7pe5nvzhn2fpqir.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363632/r7xc3l5tebsu2nj0bfnq.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363632/t1lnjmlwsjapkmerniqq.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363630/hcpigxr0sbxqwygcochz.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363629/uhzo4vzybtpdaevk8b3y.jpg",
+      
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363629/uhzo4vzybtpdaevk8b3y.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363628/yp28osymockxovibysf4.jpg",
+      "https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363628/rqvw63qzreveug1z7ag7.jpg",
+      'https://res.cloudinary.com/djxd1dmvh/image/upload/v1709363628/rqvw63qzreveug1z7ag7.jpg",
+
       // Add more Cloudinary image links here
     ];
 
@@ -37,7 +54,7 @@ const RandomArt: React.FC = () => {
       bgRepeat="no-repeat"
       bgPos="center"
       bgSize="cover"
-      // bgGradient="linear-gradient(to bottom, #FFFFFF, #FFFFFF)"
+    // bgGradient="linear-gradient(to bottom, #FFFFFF, #FFFFFF)"
     >
       <Stack
         position="fixed"
